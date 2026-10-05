@@ -1,7 +1,7 @@
 {
  "name": "my_dataset_v1",
  "from_version": "v0",
- "author": "202212305_김태윤윤",
+ "author": "202212305_김태윤",
  "created": "2026-10-05",
  "changes": [
   "rebalance_ds(n_bins=21)"
