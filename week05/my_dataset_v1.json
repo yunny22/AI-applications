@@ -1,0 +1,21 @@
+{
+ "name": "my_dataset_v1",
+ "from_version": "v0",
+ "author": "202212305_김태윤윤",
+ "created": "2026-10-05",
+ "changes": [
+  "rebalance_ds(n_bins=21)"
+ ],
+ "augment_at_train": [
+  "flip",
+  "shift(gain=0.006)",
+  "brightness",
+  "noise"
+ ],
+ "summary": {
+  "n": 2848,
+  "runs": 10,
+  "straight_frac": 0.15203651685393257,
+  "edge_frac": 0.020365168539325844
+ }
+}
