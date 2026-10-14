@@ -1,0 +1,180 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "simulator_version": "0.3.1",
+  "criterion": "Equal mean over public/hidden tracks and 1.0x/1.2x disturbances; five paired seeds per condition",
+  "n_checkpoints": 11,
+  "n_evaluations": 220,
+  "ranking": [
+    {
+      "round": "D8",
+      "round_id": 8,
+      "mean_score": 87.58695839672637,
+      "pub_1.0x": 88.92518822299766,
+      "pub_1.2x": 86.28404616429346,
+      "hid_1.0x": 88.89168846847528,
+      "hid_1.2x": 86.24691073113911
+    },
+    {
+      "round": "D7",
+      "round_id": 7,
+      "mean_score": 87.53001819687802,
+      "pub_1.0x": 88.87314872437165,
+      "pub_1.2x": 86.18906705595171,
+      "hid_1.0x": 88.86173148688529,
+      "hid_1.2x": 86.19612552030341
+    },
+    {
+      "round": "D6",
+      "round_id": 6,
+      "mean_score": 87.48492639949187,
+      "pub_1.0x": 88.82558169884194,
+      "pub_1.2x": 86.17378704345442,
+      "hid_1.0x": 88.78414670065602,
+      "hid_1.2x": 86.15619015501507
+    },
+    {
+      "round": "D3",
+      "round_id": 3,
+      "mean_score": 87.1315284193928,
+      "pub_1.0x": 88.59988591149019,
+      "pub_1.2x": 85.72853546278857,
+      "hid_1.0x": 88.51196896237553,
+      "hid_1.2x": 85.68572334091687
+    },
+    {
+      "round": "D5",
+      "round_id": 5,
+      "mean_score": 86.72916325010351,
+      "pub_1.0x": 88.79577120446288,
+      "pub_1.2x": 83.24151641893393,
+      "hid_1.0x": 88.77730612134962,
+      "hid_1.2x": 86.10205925566757
+    },
+    {
+      "round": "D9",
+      "round_id": 9,
+      "mean_score": 82.41502080617636,
+      "pub_1.0x": 88.71554427659055,
+      "pub_1.2x": 74.65959846044942,
+      "hid_1.0x": 88.67238815919914,
+      "hid_1.2x": 77.61255232846631
+    },
+    {
+      "round": "D10",
+      "round_id": 10,
+      "mean_score": 76.60459932101958,
+      "pub_1.0x": 88.88392133128418,
+      "pub_1.2x": 60.32525331229105,
+      "hid_1.0x": 88.88164608214136,
+      "hid_1.2x": 68.32757655836176
+    },
+    {
+      "round": "D1",
+      "round_id": 1,
+      "mean_score": 65.71993674755306,
+      "pub_1.0x": 88.55399933987664,
+      "pub_1.2x": 39.29176119808822,
+      "hid_1.0x": 88.54531798770678,
+      "hid_1.2x": 46.488668464540645
+    },
+    {
+      "round": "v1",
+      "round_id": 0,
+      "mean_score": 62.047252068650856,
+      "pub_1.0x": 86.73947014307029,
+      "pub_1.2x": 43.61078247829367,
+      "hid_1.0x": 86.89844860881725,
+      "hid_1.2x": 30.940307044422223
+    },
+    {
+      "round": "D2",
+      "round_id": 2,
+      "mean_score": 61.95913519308716,
+      "pub_1.0x": 88.54484075195785,
+      "pub_1.2x": 24.36237970525026,
+      "hid_1.0x": 88.51928773908561,
+      "hid_1.2x": 46.4100325760549
+    },
+    {
+      "round": "D4",
+      "round_id": 4,
+      "mean_score": 61.8694984990513,
+      "pub_1.0x": 88.64738289738622,
+      "pub_1.2x": 24.397836485738388,
+      "hid_1.0x": 88.61734578474292,
+      "hid_1.2x": 45.81542882833767
+    }
+  ],
+  "selected_round": "D8",
+  "selected_round_id": 8,
+  "checkpoint": "policy_round8.pt",
+  "checkpoint_sha256": "2883dd07fcac195ca0e6f3809b8e2a70814bab832c3b95a19207436ac166e4f0",
+  "onnx_sha256": "f8bc8b269f78b42bd9cf6cee28f2e20cfb734460a0994ce6130e244837503442",
+  "elapsed_seconds": 202.37,
+  "verification": {
+    "onnx_checker": "passed",
+    "input": {
+      "name": "image",
+      "dtype": 1,
+      "shape": [
+        "batch",
+        3,
+        66,
+        200
+      ]
+    },
+    "output": {
+      "name": "steer",
+      "dtype": 1,
+      "shape": [
+        "batch",
+        1
+      ]
+    },
+    "preprocessing": "RGB float32 / 255.0, NCHW",
+    "parity_samples": 64,
+    "max_absolute_prediction_difference": 3.5762786865234375e-07,
+    "torch_public_1_2x_seed0_score": 87.07140804988249,
+    "onnx_public_1_2x_seed0_score": 87.07083230261297,
+    "absolute_closed_loop_score_difference": 0.0005757472695222532
+  },
+  "onnx": "week07/my_policy_v2.onnx",
+  "student": "202212305_김태윤",
+  "evaluation_protocol": {
+    "public_tracks": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hidden_track_seeds": [
+      101,
+      202
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "n_episodes_per_track_per_seed": 1,
+    "max_steps": 1500,
+    "noise": 0.02,
+    "speed": 1.0,
+    "disturbance_every_steps": 50,
+    "normal_disturbance": {
+      "d": 0.35,
+      "psi": 0.3
+    },
+    "hard_disturbance": {
+      "d": 0.42,
+      "psi": 0.36
+    }
+  }
+}
