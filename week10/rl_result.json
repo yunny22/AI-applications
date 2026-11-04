@@ -1,0 +1,24 @@
+{
+ "student": "202212305_김태윤",
+ "level_table": {
+  "L1": {
+   "start": 89.5,
+   "ppo_scratch": 90.5,
+   "ppo_bc12": 88.3
+  },
+  "L2": {
+   "start": 82.6,
+   "ppo_scratch": 9.6,
+   "ppo_bc12": 23.3
+  },
+  "L4": {
+   "start": 44.4,
+   "ppo_scratch": 44.4,
+   "ppo_bc12": 72.0
+  }
+ },
+ "start_hard": 86.94823495016823,
+ "best_hard": 87.1,
+ "steps": 7680,
+ "onnx": "outputs/week10/assignment4_202212305_김태윤/my_policy_rl.onnx"
+}
