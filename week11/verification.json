@@ -1,0 +1,45 @@
+{
+  "onnx_checks": [
+    {
+      "file": "MobileNetV3_동결.onnx",
+      "structural_check": true,
+      "finite_inference": true
+    },
+    {
+      "file": "MobileNetV3_미세조정.onnx",
+      "structural_check": true,
+      "finite_inference": true
+    },
+    {
+      "file": "PilotNet__랜덤화.onnx",
+      "structural_check": true,
+      "finite_inference": true
+    },
+    {
+      "file": "PilotNet__세그_보조.onnx",
+      "structural_check": true,
+      "finite_inference": true
+    },
+    {
+      "file": "PilotNet_v2.onnx",
+      "structural_check": true,
+      "finite_inference": true
+    },
+    {
+      "file": "my_policy_v3.onnx",
+      "structural_check": true,
+      "finite_inference": true
+    }
+  ],
+  "parity_frames": 32,
+  "max_abs_error": {
+    "v2": 1.1920928955078125e-07,
+    "seg_fixed": 1.7136335372924805e-07
+  },
+  "final_onnx_scores": {
+    "L1": 89.5,
+    "L3": 87.0,
+    "L2": 82.6
+  },
+  "final_sha256": "f8bc8b269f78b42bd9cf6cee28f2e20cfb734460a0994ce6130e244837503442"
+}

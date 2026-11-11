@@ -1,0 +1,3 @@
+condition,L1,L3,L2,mask_iou
+before_flip_true,88.5,25.5,10.6,0.757
+after_flip_false,29.8,25.6,10.6,0.876

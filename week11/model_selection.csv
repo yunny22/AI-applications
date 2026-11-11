@@ -1,0 +1,6 @@
+model,params,latency_ms,onnx_kb,L1,L3,L2,onnx
+PilotNet v2,252219,0.28,988,89.5,87.0,82.6,PilotNet_v2.onnx
+PilotNet + 랜덤화,252219,0.28,988,89.2,34.1,10.6,PilotNet__랜덤화.onnx
+PilotNet + 세그 보조,246749,0.28,966,29.8,25.6,10.6,PilotNet__세그_보조.onnx
+MobileNetV3 동결,984809,0.71,3856,87.4,9.7,9.3,MobileNetV3_동결.onnx
+MobileNetV3 미세조정,984809,0.71,3856,57.0,12.9,7.4,MobileNetV3_미세조정.onnx
