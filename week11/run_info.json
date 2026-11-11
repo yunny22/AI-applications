@@ -18,20 +18,10 @@
   "pretrained_mobilenet": true,
   "input_policy_sha256": "6c1370a6d8cc34caa3d81ee5af8f747f9746618d0be3c28bae8697443369992f",
   "input_dataset_sha256": "c299b91742f83d7eef7c8a2587fac11198e147dce2e762a2622470729f89f31d",
-  "seg_comparison": [
-    {
-      "condition": "before_flip_true",
-      "L1": 88.5,
-      "L3": 25.5,
-      "L2": 10.6,
-      "mask_iou": 0.757
-    },
-    {
-      "condition": "after_flip_false",
-      "L1": 29.8,
-      "L3": 25.6,
-      "L2": 10.6,
-      "mask_iou": 0.876
-    }
-  ]
+  "seg_metrics": {
+    "L1": 29.8,
+    "L3": 25.6,
+    "L2": 10.6,
+    "mask_iou": 0.876
+  }
 }
