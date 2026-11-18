@@ -1,0 +1,115 @@
+{
+  "verified_at": "2026-11-18T16:04:21+09:00",
+  "scope": "Re-evaluation of saved ONNX models; no retraining or full notebook execution.",
+  "environment": {
+    "python": "3.10.12",
+    "numpy": "1.26.4",
+    "onnx": "1.21.0",
+    "onnxruntime": "1.23.2",
+    "tinytrack": "0.3.1",
+    "onnx_cpu_threads": 2,
+    "inference_batch_size": 1
+  },
+  "notebook": {
+    "file": "Week12_demo.ipynb",
+    "sha256": "457643246aa1f9f74e2e1b5e23021e22ebf9fcfad6e2833be66f261f7097858c",
+    "matches_original": true,
+    "code_cells": 7,
+    "syntax_valid": true,
+    "saved_output_count": 0,
+    "full_notebook_executed_for_this_summary": false
+  },
+  "dataset": {
+    "source": "outputs/week07/my_dataset_v2.npz",
+    "included_in_repository": false,
+    "sha256": "c299b91742f83d7eef7c8a2587fac11198e147dce2e762a2622470729f89f31d",
+    "total_frames": 4495,
+    "train_frames": 3352,
+    "validation_frames": 1143,
+    "split": "split_by_run(val_frac=0.2, seed=0)",
+    "mae_selection": "first min(400, validation_frames) samples",
+    "mae_samples": 400
+  },
+  "evaluation": {
+    "tracks": [
+      "A",
+      "B",
+      "C"
+    ],
+    "seed": 0,
+    "n_episodes_per_track": 1,
+    "max_steps": 1500,
+    "comparison_levels": [
+      "L1",
+      "L2"
+    ],
+    "self_evaluation_style_seed": 7,
+    "score_is_accuracy_percent": false
+  },
+  "models": [
+    {
+      "file": "PilotNet.onnx",
+      "sha256": "b86eb9cca4f38022a96264bee2bb7c596fba8f963d0aa51de6d160dd5ebf5929",
+      "bytes": 1012179,
+      "onnx_structure_valid": true,
+      "inference_batch_size": 1,
+      "finite_validation_predictions": true
+    },
+    {
+      "file": "conv_스템_+_어텐션.onnx",
+      "sha256": "2c5214a9ced7efeac009b583e86e9abaf4bcc000c1349b3297d972f36dccf113",
+      "bytes": 653211,
+      "onnx_structure_valid": true,
+      "inference_batch_size": 1,
+      "finite_validation_predictions": true
+    }
+  ],
+  "attention_export_limitation": "The existing model declares dynamic batch but the CLS expand was traced at batch 1; use batch 1.",
+  "self_evaluation": {
+    "policy": "../week11/my_policy_v3.onnx",
+    "sha256": "f8bc8b269f78b42bd9cf6cee28f2e20cfb734460a0994ce6130e244837503442",
+    "same_as_original_policy": true,
+    "recorded_file": "self_eval.json",
+    "rechecked_levels": {
+      "L1": 89.5,
+      "L2": 82.6,
+      "L3": 87.0,
+      "L4": 44.4,
+      "L5": 26.4
+    },
+    "matches_recorded_levels": true,
+    "weakest_of_L2_L3_L4": "L4"
+  },
+  "one_step_dynamics_check": [
+    {
+      "d": 0,
+      "psi": 0,
+      "kappa": 0,
+      "action": -1,
+      "next_d": -0.004991670832341408,
+      "next_psi": -0.1
+    },
+    {
+      "d": 0,
+      "psi": 0,
+      "kappa": 0,
+      "action": 0,
+      "next_d": 0.0,
+      "next_psi": 0.0
+    },
+    {
+      "d": 0,
+      "psi": 0,
+      "kappa": 0,
+      "action": 1,
+      "next_d": 0.004991670832341408,
+      "next_psi": 0.1
+    }
+  ],
+  "not_executed": [
+    "attention or language model retraining",
+    "world model training and horizon comparison",
+    "OpenVLA inference",
+    "multi-seed or hidden-track evaluations"
+  ]
+}
